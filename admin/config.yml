@@ -90,6 +90,11 @@ collections:
             name: "whatsapp"
             widget: string
             hint: "Orders are sent here. For example 0983503800."
+          - label: "Email address"
+            name: "email"
+            widget: string
+            required: false
+            hint: "Shown under Contact at the bottom of the site. Leave empty to hide it."
           - label: "Top banner messages"
             name: "notice"
             widget: list
