@@ -264,7 +264,7 @@ dialog::backdrop { background: rgba(0,0,0,.7); }
     </div>
     <div>
       <p class="label">Contact</p>
-      <ul><li id="waFoot"></li><li id="emailFoot"></li></ul>
+      <ul><li id="waFoot"></li><li id="waChat"></li><li id="emailFoot"></li></ul>
     </div>
     <div>
       <p class="label">Shop</p>
@@ -376,12 +376,18 @@ function applySettings() {
     notice.forEach(t => { const s = document.createElement("span"); s.textContent = t; box.appendChild(s); });
   }
   const li = $("#waFoot"); li.textContent = "";
+  const chat = $("#waChat"); chat.textContent = ""; chat.hidden = !WHATSAPP;
   if (WHATSAPP) {
+    li.append("Call / WhatsApp: ");
+    const call = document.createElement("a");
+    call.href = `tel:+${WHATSAPP}`;
+    call.textContent = displayPhone(WHATSAPP);
+    li.appendChild(call);
     const a = document.createElement("a");
     a.href = `https://wa.me/${WHATSAPP}`; a.target = "_blank"; a.rel = "noopener";
-    a.textContent = `WhatsApp: ${displayPhone(WHATSAPP)}`;
-    li.appendChild(a);
-  } else li.textContent = "WhatsApp: number coming soon";
+    a.textContent = "Chat with us on WhatsApp";
+    chat.appendChild(a);
+  } else li.textContent = "Call / WhatsApp: number coming soon";
 
   const email = String(SETTINGS.email || "").trim();
   const em = $("#emailFoot"); em.textContent = "";
