@@ -1,4 +1,4 @@
-# Admin page settings (Decap CMS).
+# Admin page settings (Sveltia CMS, compatible with Decap CMS).
 # GitHub repository that stores the site (username/repository).
 backend:
   name: github
