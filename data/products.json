@@ -1,20 +1,6 @@
 {
   "products": [
     {
-      "name": "timberland",
-      "image": "/images/uploads/Screenshot_20261124-140924.jpg",
-      "price": 200000,
-      "tags": [
-        "123timberland"
-      ],
-      "sizes": [
-        "38, 42, 43, 44"
-      ],
-      "note": "sacddbdsbthrt  bhrgrgv  tko;uil",
-      "ready": true,
-      "sold_out": false
-    },
-    {
       "name": "Summer Dresses",
       "image": "/images/summer-dresses.jpg",
       "price": 55000,
