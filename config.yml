@@ -1,0 +1,102 @@
+# Admin page settings (Sveltia CMS, compatible with Decap CMS).
+# GitHub repository that stores the site (username/repository).
+backend:
+  name: github
+  repo: Sdzama3/tammiez-site
+  branch: main
+  commit_messages:
+    update: "Update {{slug}}"
+    uploadMedia: "Upload photo {{path}}"
+
+# Photos uploaded from the admin page are saved here.
+media_folder: "images/uploads"
+public_folder: "/images/uploads"
+
+locale: en
+
+collections:
+  - name: catalog
+    label: "Catalog"
+    editor:
+      preview: false
+    files:
+      - name: products
+        label: "Products"
+        file: "data/products.json"
+        fields:
+          - label: "Products"
+            name: "products"
+            widget: list
+            label_singular: "item"
+            add_to_top: true
+            summary: "{{fields.name}}  ·  MK{{fields.price}}"
+            hint: "New items are added at the top. Drag items to change their order on the site. The first 4 items with photos are shown at the top of the home page."
+            fields:
+              - label: "Name"
+                name: "name"
+                widget: string
+                hint: "For example: Timberland Boots"
+              - label: "Photo"
+                name: "image"
+                widget: image
+                choose_url: false
+              - label: "Price (MK)"
+                name: "price"
+                widget: number
+                value_type: int
+                min: 0
+                required: false
+                hint: "Numbers only, no commas. For example 180000. Leave empty to show 'Ask for price'."
+              - label: "Categories"
+                name: "tags"
+                widget: list
+                hint: "Separate with commas. Existing: Ladies, Men, Sneakers, Sandals, Jerseys, Winter, Big Sizes. A new name such as Boots or Suits becomes a new filter on the site."
+              - label: "Sizes"
+                name: "sizes"
+                widget: list
+                required: false
+                hint: "Optional. Separate with commas, for example 40, 41, 42 or S, M, L, XL. Leave empty to let customers type their size."
+              - label: "Description"
+                name: "note"
+                widget: string
+                required: false
+                hint: "Optional short line, for example: Available in black and brown."
+              - label: "Readily available"
+                name: "ready"
+                widget: boolean
+                default: false
+                required: false
+              - label: "Sold out"
+                name: "sold_out"
+                widget: boolean
+                default: false
+                required: false
+                hint: "Turn on to keep the item on the site but stop people adding it to their bag."
+
+  - name: settings
+    label: "Shop settings"
+    editor:
+      preview: false
+    files:
+      - name: settings
+        label: "Shop settings"
+        file: "data/settings.json"
+        fields:
+          - label: "Shop name"
+            name: "shop_name"
+            widget: string
+            hint: "Used in the WhatsApp order message."
+          - label: "WhatsApp number"
+            name: "whatsapp"
+            widget: string
+            hint: "Orders are sent here. For example 0983503800."
+          - label: "Email address"
+            name: "email"
+            widget: string
+            required: false
+            hint: "Shown under Contact at the bottom of the site. Leave empty to hide it."
+          - label: "Top banner messages"
+            name: "notice"
+            widget: list
+            required: false
+            hint: "Separate with commas. Shown in the gold bar at the top of the site."
