@@ -1,24 +1,289 @@
 {
   "products": [
-    {"name": "Summer Dresses", "image": "/images/summer-dresses.jpg", "price": 55000, "tags": ["Ladies"], "note": "Off-shoulder summer dresses in several prints."},
-    {"name": "Airmax", "image": "/images/airmax.jpg", "price": 185000, "tags": ["Sneakers"]},
-    {"name": "Winter Jackets", "image": "/images/winter-jackets.jpg", "price": 85000, "tags": ["Winter"], "note": "Unisex winter jackets."},
-    {"name": "Original Jerseys", "image": "/images/jersey.jpg", "price": 65000, "tags": ["Jerseys"], "note": "Original football jerseys."},
-    {"name": "New Balance", "image": "/images/new-balance.jpg", "price": 220000, "tags": ["Sneakers"]},
-    {"name": "Airforce 1", "image": "/images/airforce.jpg", "price": 150000, "tags": ["Sneakers"], "sizes": ["40", "41", "42", "43", "44", "45"], "note": "Available in sizes 40 to 45."},
-    {"name": "Vanz", "image": "/images/vanz.jpg", "price": 100000, "tags": ["Sneakers"]},
-    {"name": "Unisex Sneakers", "image": "/images/unisex-sneakers.jpg", "price": 120000, "tags": ["Sneakers"], "note": "Unisex fit for men and ladies."},
-    {"name": "Decent Pencil Dress", "image": "/images/pencil-dress.jpg", "price": 60000, "tags": ["Ladies"]},
-    {"name": "Ladies Jean Trousers", "image": "/images/jean-trousers.jpg", "price": 40000, "tags": ["Ladies"], "ready": true},
-    {"name": "Jean Shorts", "image": "/images/jean-shorts.jpg", "price": 40000, "tags": ["Ladies"], "ready": true},
-    {"name": "Ladies Chanel Sandals", "image": "/images/ladies-sandals.jpg", "price": 45000, "tags": ["Ladies", "Sandals"], "sizes": ["37", "38", "39", "40", "41"], "note": "Sizes 37 to 41."},
-    {"name": "Men's Leather Sandals (Slide)", "image": "/images/sandals-slide.jpg", "price": 95000, "tags": ["Men", "Sandals"]},
-    {"name": "Men's Leather Sandals (Strap)", "image": "/images/sandals-strap.jpg", "price": 100000, "tags": ["Men", "Sandals"]},
-    {"name": "Men's Linen Shorts", "image": "/images/linen-shorts.jpg", "price": 75000, "tags": ["Men"], "note": "Available in several colors."},
-    {"name": "Men's Baggy Pants", "image": "/images/baggy-pants.jpg", "price": 110000, "tags": ["Men"]},
-    {"name": "Men's Shirts", "image": "/images/mens-shirts.jpg", "price": 55000, "tags": ["Men"], "ready": true, "note": "Readily available in white."},
-    {"name": "Men's Sweaters", "image": "/images/sweaters.jpg", "price": 75000, "tags": ["Men", "Winter"]},
-    {"name": "Men's Big Size T-shirts", "image": "/images/big-tshirts.jpg", "price": 65000, "tags": ["Men", "Big Sizes"], "sizes": ["3XL", "4XL", "5XL"], "note": "For chubby men. Sizes 3XL to 5XL."},
-    {"name": "Men's Big Size Shirts", "image": "/images/big-shirts.jpg", "price": 75000, "tags": ["Men", "Big Sizes"], "sizes": ["XL", "2XL", "3XL", "4XL", "5XL", "6XL", "7XL"], "note": "For chubby men. Sizes XL to 7XL."}
+    {
+      "name": "timberland",
+      "image": "/images/uploads/Screenshot_20261124-140924.jpg",
+      "price": 200000,
+      "tags": [
+        "123timberland"
+      ],
+      "sizes": [
+        "38, 42, 43, 44"
+      ],
+      "note": "sacddbdsbthrt  bhrgrgv  tko;uil",
+      "ready": true,
+      "sold_out": false
+    },
+    {
+      "name": "Summer Dresses",
+      "image": "/images/summer-dresses.jpg",
+      "price": 55000,
+      "tags": [
+        "Ladies"
+      ],
+      "sizes": [],
+      "note": "Off-shoulder summer dresses in several prints.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Airmax",
+      "image": "/images/airmax.jpg",
+      "price": 185000,
+      "tags": [
+        "Sneakers"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Winter Jackets",
+      "image": "/images/winter-jackets.jpg",
+      "price": 85000,
+      "tags": [
+        "Winter"
+      ],
+      "sizes": [],
+      "note": "Unisex winter jackets.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Original Jerseys",
+      "image": "/images/jersey.jpg",
+      "price": 65000,
+      "tags": [
+        "Jerseys"
+      ],
+      "sizes": [],
+      "note": "Original football jerseys.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "New Balance",
+      "image": "/images/new-balance.jpg",
+      "price": 220000,
+      "tags": [
+        "Sneakers"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Airforce 1",
+      "image": "/images/airforce.jpg",
+      "price": 150000,
+      "tags": [
+        "Sneakers"
+      ],
+      "sizes": [
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "note": "Available in sizes 40 to 45.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Vanz",
+      "image": "/images/vanz.jpg",
+      "price": 100000,
+      "tags": [
+        "Sneakers"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Unisex Sneakers",
+      "image": "/images/unisex-sneakers.jpg",
+      "price": 120000,
+      "tags": [
+        "Sneakers"
+      ],
+      "sizes": [],
+      "note": "Unisex fit for men and ladies.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Decent Pencil Dress",
+      "image": "/images/pencil-dress.jpg",
+      "price": 60000,
+      "tags": [
+        "Ladies"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Ladies Jean Trousers",
+      "image": "/images/jean-trousers.jpg",
+      "price": 40000,
+      "tags": [
+        "Ladies"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": true,
+      "sold_out": false
+    },
+    {
+      "name": "Jean Shorts",
+      "image": "/images/jean-shorts.jpg",
+      "price": 40000,
+      "tags": [
+        "Ladies"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": true,
+      "sold_out": false
+    },
+    {
+      "name": "Ladies Chanel Sandals",
+      "image": "/images/ladies-sandals.jpg",
+      "price": 45000,
+      "tags": [
+        "Ladies",
+        "Sandals"
+      ],
+      "sizes": [
+        "37",
+        "38",
+        "39",
+        "40",
+        "41"
+      ],
+      "note": "Sizes 37 to 41.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Leather Sandals (Slide)",
+      "image": "/images/sandals-slide.jpg",
+      "price": 95000,
+      "tags": [
+        "Men",
+        "Sandals"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Leather Sandals (Strap)",
+      "image": "/images/sandals-strap.jpg",
+      "price": 100000,
+      "tags": [
+        "Men",
+        "Sandals"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Linen Shorts",
+      "image": "/images/linen-shorts.jpg",
+      "price": 75000,
+      "tags": [
+        "Men"
+      ],
+      "sizes": [],
+      "note": "Available in several colors.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Baggy Pants",
+      "image": "/images/baggy-pants.jpg",
+      "price": 110000,
+      "tags": [
+        "Men"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Shirts",
+      "image": "/images/mens-shirts.jpg",
+      "price": 55000,
+      "tags": [
+        "Men"
+      ],
+      "sizes": [],
+      "note": "Readily available in white.",
+      "ready": true,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Sweaters",
+      "image": "/images/sweaters.jpg",
+      "price": 75000,
+      "tags": [
+        "Men",
+        "Winter"
+      ],
+      "sizes": [],
+      "note": "",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Big Size T-shirts",
+      "image": "/images/big-tshirts.jpg",
+      "price": 65000,
+      "tags": [
+        "Men",
+        "Big Sizes"
+      ],
+      "sizes": [
+        "3XL",
+        "4XL",
+        "5XL"
+      ],
+      "note": "For chubby men. Sizes 3XL to 5XL.",
+      "ready": false,
+      "sold_out": false
+    },
+    {
+      "name": "Men's Big Size Shirts",
+      "image": "/images/big-shirts.jpg",
+      "price": 75000,
+      "tags": [
+        "Men",
+        "Big Sizes"
+      ],
+      "sizes": [
+        "XL",
+        "2XL",
+        "3XL",
+        "4XL",
+        "5XL",
+        "6XL",
+        "7XL"
+      ],
+      "note": "For chubby men. Sizes XL to 7XL.",
+      "ready": false,
+      "sold_out": false
+    }
   ]
 }
