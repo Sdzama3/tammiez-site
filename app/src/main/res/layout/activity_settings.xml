@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Where should recordings go?"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:paddingBottom="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose once. Every new recording is handled this way automatically. You can change it here anytime."
+            android:paddingBottom="12dp" />
+
+        <RadioGroup
+            android:id="@+id/destGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/destPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Keep on phone only" />
+
+            <RadioButton
+                android:id="@+id/destEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email the recording, then remove it from phone" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/emailBox"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The recording is sent from your own Gmail using a Google App Password (not your normal password). Create one at myaccount.google.com → Security → App passwords. After it sends, the file is removed from your phone to save space — but kept if sending fails, so nothing is lost."
+                android:paddingBottom="8dp" />
+
+            <EditText
+                android:id="@+id/senderEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Your Gmail address (sends the copy)"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/appPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gmail App Password"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/recipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Send copies to this email"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <CheckBox
+            android:id="@+id/autoRecordCalls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Automatically record calls"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Starts recording on its own when a call begins and emails it when the call ends. It tries to capture both voices; if your phone blocks that, put the call on speakerphone so the mic hears both sides."
+            android:textSize="12sp"
+            android:paddingTop="4dp" />
+
+        <Button
+            android:id="@+id/saveButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</ScrollView>
